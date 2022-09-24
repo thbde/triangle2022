@@ -5,10 +5,14 @@ public class TriangleClfe implements Triangle
     @Override
     public TriangleResult getTriangleResultForLengths(int... lengths)
     {
-        if (lengths.length != 3)
+        if (lengths == null)
         {
             return TriangleResult.UNKNOWN;
-        } else if (lengths[0] < 0 || lengths[1] < 0 || lengths[2] < 0)
+        }
+        else if (lengths.length != 3)
+        {
+            return TriangleResult.UNKNOWN;
+        } else if (lengths[0] <= 0 || lengths[1] <= 0 || lengths[2] <= 0)
         {
             return TriangleResult.UNKNOWN;
         } else if (lengths[0] != lengths[1] && lengths[1] != lengths[2])

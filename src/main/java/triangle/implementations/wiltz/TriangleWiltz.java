@@ -21,8 +21,8 @@ public class TriangleWiltz implements Triangle {
             }
         }
 
-        // case: too many values (more than three)
-        if(lengths.length > 3) {
+        // case: number of values is more or less than three
+        if(lengths.length != 3) {
             return TriangleResult.UNKNOWN;
         }
 

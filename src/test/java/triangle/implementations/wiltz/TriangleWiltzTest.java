@@ -100,4 +100,20 @@ public class TriangleWiltzTest {
 		assertThat(result).isEqualTo(expected);
 	}
 
+	@Test
+	public void testWithTwoValues() {
+		final int[] input = {13,99};
+		final TriangleResult expected = TriangleResult.UNKNOWN;
+		final TriangleResult result = triangle.getTriangleResultForLengths(input);
+		assertThat(result).isEqualTo(expected);
+	}
+
+	@Test
+	public void testWithFourValues() {
+		final int[] input = {13,99,23,43};
+		final TriangleResult expected = TriangleResult.UNKNOWN;
+		final TriangleResult result = triangle.getTriangleResultForLengths(input);
+		assertThat(result).isEqualTo(expected);
+	}
+
 }
