@@ -8,7 +8,7 @@ public class TriangleClfe implements Triangle
         if (lengths.length != 3)
         {
             return TriangleResult.UNKNOWN;
-        } else if (lengths[0] < 0 || lengths[1] < 0 || lengths[2] < 0)
+        } else if (lengths[0] <= 0 || lengths[1] <= 0 || lengths[2] <= 0)
         {
             return TriangleResult.UNKNOWN;
         } else if (lengths[0] != lengths[1] && lengths[1] != lengths[2])
