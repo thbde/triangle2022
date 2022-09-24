@@ -18,7 +18,7 @@ public class TriangleNSchmidt implements Triangle {
 
     @Override
     public TriangleResult getTriangleResultForLengths(int... lengths) {
-        if (lengths.length == 0) {
+        if (lengths == null || lengths.length == 0) {
             return TriangleResult.UNKNOWN;
         }
 

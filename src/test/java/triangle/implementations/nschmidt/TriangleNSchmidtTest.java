@@ -84,6 +84,14 @@ public class TriangleNSchmidtTest {
         assertThat(result).isEqualTo(expected);
     }
 
+    @Test
+    public void testGetTriangleResultForNull() {
+        final int[] input = null;
+        final TriangleResult expected = TriangleResult.UNKNOWN;
+        final TriangleResult result = triangleNSchmidt.getTriangleResultForLengths(input);
+        assertThat(result).isEqualTo(expected);
+    }
+
 
     @Test
     public void testGetTriangleResultForMinusValues() {
