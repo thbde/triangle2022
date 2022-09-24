@@ -71,7 +71,7 @@
 		<version>4.2.0</version>
 		<configuration>
           <effort>max</effort>
-		  <maxrank>20</maxrank>
+		  <maxRank>20</maxRank>
 		  <threshold>Low</threshold>
         </configuration>
 		<dependencies>
